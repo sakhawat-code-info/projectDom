@@ -19,13 +19,17 @@ for (const btn of allBtn) {
         getIdShowValue('totalCost', totalSum);
         getIdShowValue('grandTotal', totalSum);
 
-        const grandTotal = document.getElementById('grandTotal').innerText;
+
+
 
         const allVehicle = document.getElementsByClassName('vehicle');
         for (const vehicle of allVehicle) {
             vehicle.addEventListener('click', function (e) {
-                ee.target.parentNode.childNodes[1].innerText;
-                console.log();
+                const discountLi = e.target.parentNode.childNodes[1].innerText;
+                const discount = parseInt(discountLi);
+                const afterDiscountGrandTotal = textIdToInt('grandTotal') + (discount);
+                ;
+                console.log(afterDiscountGrandTotal);
                 // getIdShowValue(id, value)
             })
         }
