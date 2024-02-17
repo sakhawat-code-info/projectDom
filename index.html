@@ -33,7 +33,7 @@
 
     <div class="container mx-auto">
         <ul class="flex justify-center items-center text-4xl font-extrabold gap-7">
-            <li>card item selected : <span>0</span></li>
+            <li>card item selected : <span id="cardAdded" class="text-red-800">0</span></li>
             <li>sign in</li>
             <li>Log in</li>
         </ul>
@@ -56,7 +56,7 @@
                         <h2 class="card-title">sajek!</h2>
                         <p>cost : <span>300</span> tk</p>
                         <div class="card-actions justify-end">
-                            <button class="btn btn-primary">Add to Card</button>
+                            <button class="btn btn-primary add_btn">Add to Card</button>
                         </div>
                     </div>
                 </div>
@@ -66,7 +66,7 @@
                         <h2 class="card-title">dhaka!</h2>
                         <p>cost : <span>300</span> tk</p>
                         <div class="card-actions justify-end">
-                            <button class="btn btn-primary">Add to Card</button>
+                            <button class="btn btn-primary add_btn">Add to Card</button>
                         </div>
                     </div>
                 </div>
@@ -76,7 +76,7 @@
                         <h2 class="card-title">cumilla!</h2>
                         <p>cost : <span>400</span> tk</p>
                         <div class="card-actions justify-end">
-                            <button class="btn btn-primary">Add to Card</button>
+                            <button class="btn btn-primary add_btn">Add to Card</button>
                         </div>
                     </div>
                 </div>
@@ -86,7 +86,7 @@
                         <h2 class="card-title">cumilla!</h2>
                         <p>cost : <span>400</span> tk</p>
                         <div class="card-actions justify-end">
-                            <button class="btn btn-primary">Add to Card</button>
+                            <button class="btn btn-primary add_btn">Add to Card</button>
                         </div>
                     </div>
                 </div>
@@ -96,7 +96,7 @@
                         <h2 class="card-title">cumilla!</h2>
                         <p>cost : <span>400</span> tk</p>
                         <div class="card-actions justify-end">
-                            <button class="btn btn-primary">Add to Card</button>
+                            <button class="btn btn-primary add_btn">Add to Card</button>
                         </div>
                     </div>
                 </div>
@@ -108,7 +108,18 @@
 
             <div class="w-96 border p-4 m-4 flex flex-col items-center">
                 <h3>cart</h3>
-                <p>Total cost: <span>0</span> tk</p>
+                <hr>
+                <ul id="selectedPlacePriceShow" class=""></ul>
+                <hr>
+                <p>Total cost: <span id="totalCost" class="font-extrabold">0</span> tk</p>
+                <div>
+                    <ul class="flex gap-2">
+                        <li class="border-2 p-2">bus <span id="bus" class="vehicle">200</span></li>
+                        <li class="border-2 p-2">train <span id="train" class="vehicle">-200</span></li>
+                        <li class="border-2 p-2">plane <span id="plane" class="vehicle">500</span></li>
+                    </ul>
+                </div>
+                <div>Grand Total : <span class="text-2xl font-extrabold" id="grandTotal">0</span></div>
             </div>
         </div>
 
